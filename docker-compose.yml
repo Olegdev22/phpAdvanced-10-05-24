@@ -12,10 +12,17 @@ services:
     restart: always
     ports:
       - "8081:80" # http:80 -> http://localhost:8081 / http://127.0.0.1:8081 https:443
-  volumes:
-    - .:/var/www/html
-  networks:
-    - php_pro
+    volumes:
+      - .:/var/www/html
+    networks:
+      - php_pro
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - php_pro
   database:
     image: "mysql:8"
     restart: always
@@ -24,7 +31,7 @@ services:
     volumes:
       - "database_volume:/var/lib/mysql"
     environment:
-      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: 123456
       MYSQL_DATABASE: phpPro_10.05.24
     networks:
       - php_pro

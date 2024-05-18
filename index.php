@@ -1,2 +1,2 @@
 <?php
-    echo "Hello hw_1";
+    echo "Hello Docker adminer";
