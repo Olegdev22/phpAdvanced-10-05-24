@@ -72,16 +72,16 @@ class Color
 
     static public function random(array $colors)
     {
-        foreach ($colors as $color) {
-            $color(mt_rand(0, 255), mt_rand(0, 255), mt_rand(0, 255));
-        }
-        return $color;
+//        foreach ($colors as $color) {
+//            $color(mt_rand(0, 255), mt_rand(0, 255), mt_rand(0, 255));
+//        }
+        return new Color(rand(0, 255), rand(0, 255), rand(0, 255));
     }
 
-    public function mix(array $colors):int
+    public function mix(array $colors): int
     {
 
-    return array_sum($colors) / count($colors);
+        return array_sum($colors) / count($colors);
     }
 
 }
@@ -89,7 +89,7 @@ class Color
 $color = new Color(100, 40, 100);
 $color->equals($color);
 // random
-
+Color::random();
 $mixedColor = $color->mix([255, 255, 255]);
 $mixedColor->$color->getRed();
 $mixedColor->$color->getGreen();
