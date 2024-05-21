@@ -1,2 +1,3 @@
 <?php
-    echo "Hello Docker adminer";
+    echo "Hello hw_1";
+    echo "Test  connection gitHub ";
