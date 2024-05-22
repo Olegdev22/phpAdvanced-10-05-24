@@ -1,2 +1,2 @@
 <?php
-    echo "Hello Docker adminer";
+    require_once "vendor/autoload.php";
