@@ -1,12 +1,13 @@
 <?php
-    require_once "vendor/autoload.php";
-    class User
+require_once "vendor/autoload.php";
+
+class User
 {
     private string $name;
-    private int $age;
+    private string $age;
     private string $email;
-
-    /*  public function __construct($name, $age, $email)
+/*
+     public function __construct($name, $age, $email)
       {
           $this->name = $name;
           $this->age = $age;
@@ -48,7 +49,10 @@
 
     public function getAll(): void
     {
-
+        //  'name' => $this->getName()
+        $name = $this->getName();
+        $age = $this->getAge();
+        $email = $this->getEmail();
     }
 
     public function __call($name, $arguments)
@@ -64,4 +68,5 @@ $user->setEmail('example@gmail.com');*/
 
 $user->test1Method('something');
 $user->getAll();
-print_r($user);
+
+dd($user);
