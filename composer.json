@@ -1,12 +1,12 @@
 {
-    "name": "root/html",
-    "type": "project",
-    "autoload": {
-        "psr-4": {
-            "Root\\Html\\": "src/"
-        }
-    },
-    "require": {
-        "larapack/dd": "^1.1"
+  "name": "root/html",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Root\\Html\\": "src/"
     }
+  },
+  "require": {
+    "larapack/dd": "^1.1"
+  }
 }
