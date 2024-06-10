@@ -3,8 +3,12 @@
   "type": "project",
   "autoload": {
     "psr-4": {
-      "Root\\Html\\": "src/"
-    }
+      "App\\": "App/",
+      "MyLib\\": "src"
+    },
+    "files": [
+      "helpers/functions.php"
+    ]
   },
   "require": {
     "larapack/dd": "^1.1",
