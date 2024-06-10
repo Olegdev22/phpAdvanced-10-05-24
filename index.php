@@ -1,16 +1,12 @@
 <?php
-
 require_once __DIR__ . "/vendor/autoload.php";
+echo '139999990';
 
-use App\Controllers\UsersController;
-use App\Controllers\Api\UsersController as ApiUsersController;
-use MyLib\LibraryClass;
+$dsn = "mysql:host=database;database=phpPro_10.05.24";
 
-$controller = new UsersController();
-$controller();
-
-$apiController =  new ApiUsersController();
-
-$lib = new LibraryClass();
-
-sayHello();
+try {
+    $pdo = new PDO($dsn, 'root', '123456');
+    dd($pdo);
+} catch (PDOException $exception) {
+    dd($exception);
+}
