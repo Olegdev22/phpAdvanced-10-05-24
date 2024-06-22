@@ -8,5 +8,5 @@ try {
     $pdo = new PDO($dsn, 'root', '123456');
     dd($pdo);
 } catch (PDOException $exception) {
-    dd($exception);
+    dd('Соединение не удалось' .$exception->getMessage());
 }
