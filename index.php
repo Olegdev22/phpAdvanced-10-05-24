@@ -1,12 +1,69 @@
 <?php
 require_once __DIR__ . "/vendor/autoload.php";
-echo '139999990';
 
-$dsn = "mysql:host=database;database=phpPro_10.05.24";
+//class Product
+//{
+//    public function get(name) {
+//    }
+//
+//    public function set(name, value) {
+//    }
+//
+//    public function save()
+//    {
+//    }
+//
+//    public function update()
+//    {
+//    }
+//
+//    public function delete()
+//    {
+//    }
+//
+//    public function show()
+//    {
+//    }
+//
+//    public function print()
+//    {
+//    }
+//}
 
-try {
-    $pdo = new PDO($dsn, 'root', '123456');
-    dd($pdo);
-} catch (PDOException $exception) {
-    dd($exception);
+class Product
+{
+    public function get($name)
+    {
+    }
+
+    public function set($name, $value)
+    {
+    }
 }
+
+class WorkProduct extends Product
+{
+    public function save()
+    {
+    }
+
+    public function update()
+    {
+    }
+
+    public function delete()
+    {
+    }
+}
+
+class ShowProduct extends Product
+{
+    public function show()
+    {
+    }
+
+    public function print()
+    {
+    }
+}
+
