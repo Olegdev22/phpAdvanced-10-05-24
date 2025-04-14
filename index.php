@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/vendor/autoload.php";
-echo '139999990';
+
+require_once __DIR__ . "/Patterns/FabricMethod/index.php";
 
 $dsn = "mysql:host=database;database=phpPro_10.05.24";
 
