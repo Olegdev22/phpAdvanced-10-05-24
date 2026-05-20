@@ -4,12 +4,10 @@
   "autoload": {
     "psr-4": {
       "Patterns\\": "Patterns/",
-      "App\\": "App/",
+
       "MyLib\\": "src"
-    },
-    "files": [
-      "helpers/functions.php"
-    ]
+    }
+
   },
   "require": {
     "larapack/dd": "^1.1",
