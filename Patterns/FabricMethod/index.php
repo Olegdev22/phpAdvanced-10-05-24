@@ -31,3 +31,4 @@ if ($shippingClass && class_exists($shippingClass)) {
         region: $deliveryZone
     );
 }
+// http://localhost:8081/?type=nova_post&weight=50&total=200&delivery_zone=usa
