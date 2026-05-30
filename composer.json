@@ -3,11 +3,11 @@
   "type": "project",
   "autoload": {
     "psr-4": {
-      "Patterns\\": "Patterns/",
-
-      "MyLib\\": "src"
-    }
-
+      "App\\": "App/"
+    },
+    "files": [
+      "core/helpers.php"
+    ]
   },
   "require": {
     "larapack/dd": "^1.1",
